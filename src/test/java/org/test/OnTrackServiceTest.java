@@ -16,8 +16,8 @@ public class OnTrackServiceTest {
     @Before
     public void setUp() {
         service = new OnTrackService();
-        futureDate = new Date(System.currentTimeMillis() + 86400000);
-        pastDate = new Date(System.currentTimeMillis() - 86400000);
+        futureDate = new Date(System.currentTimeMillis() + 86400000); //tomorrow
+        pastDate = new Date(System.currentTimeMillis() - 86400000); //yesterday
         currentDate = new Date();
 
         // Clear the database before each test
