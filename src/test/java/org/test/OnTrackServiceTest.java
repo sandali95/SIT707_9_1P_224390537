@@ -65,7 +65,7 @@ public class OnTrackServiceTest {
         OnTrackService.tasksDatabase.put(studentId, tasks);
 
         List<Task> result = service.getTasksForStudent(studentId);
-        assertEquals("Should return exactly one task", 2, result.size());
+        assertEquals("Should return exactly one task", 1, result.size());
         assertEquals("Task should match the one added", task, result.get(0));
     }
 
